@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "system-ui", "-apple-system", "sans-serif";
+  --color-nova-bg: #0F1219;
+  --color-nova-sidebar: #141822;
+  --color-nova-card: #1C212E;
+  --color-nova-accent: #1FF1D3;
+  --color-nova-text: #F8FAFC;
+  --color-nova-muted: #8B949E;
+  --color-nova-message: #1A2130;
+  --color-nova-botMessage: transparent;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-nova-bg);
+    color: var(--color-nova-text);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+}
